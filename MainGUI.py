@@ -1,5 +1,5 @@
-import tkinter
-import tkinter.ttk
+from tkinter import *
+from tkinter.ttk import *
 
 #from listWindow import listWindowClass
 #from payWindow import payWindowClass

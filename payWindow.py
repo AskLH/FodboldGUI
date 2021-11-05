@@ -19,6 +19,9 @@ class payWindowClass:
         self.button = Button(self.payWindow, text="betal", command= self.addMoney)
         self.button.pack()
 
+    def choosePerson(self):
+        pass
+
     def addMoney(self):
         try:
             amount = abs(int(self.money.get())) #HUSK AT VALIDERE INPUT!, kun positive heltal!

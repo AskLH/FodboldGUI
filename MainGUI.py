@@ -1,9 +1,9 @@
 from tkinter import *
 from tkinter.ttk import *
 
-#from listWindow import listWindowClass
-#from payWindow import payWindowClass
-#from saveWindow import saveWindowClass
+from listWindow import listWindowCLass
+from payWindow import payWindowClass
+from saveWindow import saveWindowCLass
 
 
 class mainWindow:
@@ -32,14 +32,14 @@ class mainWindow:
         #BUTTONS
 #        self.progress.pack(padx= 20)
 
-        listButton = Button(self.root,text ="Liste over indbetalinger",command = lambda: listWindowClass(self))
+        listButton = Button(self.root,text ="Liste over indbetalinger",command = lambda: listWindowCLass(self))
         listButton.pack(padx = 20, pady = 10,side=LEFT)
 
 
         payButton = Button(self.root,text ="Indbetal",command = lambda: payWindowClass(self))
         payButton.pack(padx = 20, pady = 10,side=LEFT)
 
-        bottom3Button = Button(self.root,text ="Bund 3",command = lambda: worstWindowClass(self))
+        bottom3Button = Button(self.root,text ="Bund 3",command = lambda: saveWindowCLass(self))
         bottom3Button.pack(padx = 20, pady = 10,side=LEFT)
 
         # infinite loop

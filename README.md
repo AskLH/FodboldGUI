@@ -1,4 +1,4 @@
-Trello link: https://trello.com/invite/b/0FGdQUMK/25e66d073bed1202cb4d9021c4d8ba9b/gui-gooey 
+Trello link: https://trello.com/b/0FGdQUMK/gui-gooey 
 
 Hello my friend [Ny flowchart](http://youtube.com/watch?v=dQw4w9WgXcQ)
 

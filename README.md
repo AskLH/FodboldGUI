@@ -1,3 +1,5 @@
+Trello link: https://trello.com/invite/b/0FGdQUMK/25e66d073bed1202cb4d9021c4d8ba9b/gui-gooey 
+
 Hello my friend [Ny flowchart](http://youtube.com/watch?v=dQw4w9WgXcQ)
 
 Her er en skitse/tegning af en GUI ide.

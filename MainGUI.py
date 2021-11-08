@@ -39,7 +39,7 @@ class mainWindowClass:
         payButton = Button(self.root,text ="Indbetal",command = lambda: payWindowClass(self))
         payButton.pack(padx = 20, pady = 10,side=LEFT)
 
-        bottom3Button = Button(self.root,text ="Bund 3",command = lambda: saveWindowCLass(self))
+        bottom3Button = Button(self.root,text ="gem",command = lambda: saveWindowCLass(self))
         bottom3Button.pack(padx = 20, pady = 10,side=LEFT)
 
         # infinite loop

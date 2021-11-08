@@ -15,7 +15,7 @@ class saveWindowCLass:
         YesButton = Button(self.saveWindow, text="Ja", command=self.gem)
         YesButton.pack(padx=20, pady=10, side=LEFT)
 
-        NoButton = Button(self.saveWindow, text="Afslut", command=self.master.root.destroy)
+        NoButton = Button(self.saveWindow, text="Nej", command=self.master.root.destroy)
         NoButton.pack(padx=20, pady=10, side=LEFT)
 
 
@@ -25,4 +25,5 @@ class saveWindowCLass:
         outfile = open(filename, 'wb')
        # pickle.dump(fodboldtur, outfile)
         outfile.close()
-        print("Programmet er afsluttet!")
+        print("Dataen er gemt")
+        self.saveWindow.destroy()

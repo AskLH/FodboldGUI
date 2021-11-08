@@ -22,6 +22,3 @@ Her er et flowchart over hvordan vi tænker vores GUI skal være.
 
 Sådan skal pay funktionen se ud. Flowchartet skal ses som vis man brugte funktionen en enkelt gang, men det skal dog siges at man kan lukke vinduet på hvilket som helst tidspunkt man har lyst ved at trykke på krydset. 
 ![Alt Text](Flowchart4.png)
-
-Her er vores Trello so man kan se hvor langt vi er noget.
-![Alt Text](Trello.png)

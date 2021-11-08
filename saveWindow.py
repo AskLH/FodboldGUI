@@ -26,4 +26,4 @@ class saveWindowCLass:
        # pickle.dump(fodboldtur, outfile)
         outfile.close()
         print("Dataen er gemt")
-        self.saveWindow.destroy()
+        self.master.root.destroy()

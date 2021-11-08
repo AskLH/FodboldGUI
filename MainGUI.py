@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.ttk import *
 
-from listWindow import listWindowCLass
+#from listWindow import listWindowCLass
 from payWindow import payWindowClass
 from saveWindow import saveWindowCLass
 

@@ -11,7 +11,7 @@ class payWindowClass:
         self.payWindow.geometry("200x200")
 
         Label(self.payWindow,
-              text="Indbetal").pack()
+              text="Pay").pack()
 
         self.money = Entry(self.payWindow)
         self.money.pack()
@@ -23,13 +23,4 @@ class payWindowClass:
         pass
 
     def addMoney(self):
-        try:
-            amount = abs(int(self.money.get())) #HUSK AT VALIDERE INPUT!, kun positive heltal!
-        except:
-            messagebox.showerror(parent=self.payWindow , title="Beløb fejl!", message="Prøv igen.\nKun hele tal!")
-            return
-
-        self.master.total += amount
-        self.master.progressLabelText.set(f"Indsamlet: {self.master.total} af {self.master.target} kroner:")
-        print(f"Indsamlet: {self.master.total} af {self.master.target} kroner!")
-        self.master.progress['value'] = self.master.total / self.master.target * 100
+        pass

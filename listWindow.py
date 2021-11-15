@@ -6,11 +6,14 @@ import pickle
 
 filename = 'betalinger.pk'
 fodboldtur ={}
-infile = open(filename,'rb')
-fodboldtur = pickle.load(infile)
-infile.close()
+
 
 class listWindowClass:
+    def showlist(self):
+        for item in fodboldtur.item():
+            Label(self.listWindow, text=item)
+
+
     def __init__(self, master):
         self.master = master #reference til main window objektet
         self.listWindow = Toplevel(self.master.root)
@@ -18,12 +21,11 @@ class listWindowClass:
         self.listWindow.geometry("500x500")
 
         Label(self.listWindow, text="Liste over indbetalinger.. eller.. noget der ligner en cylinder").pack()
-    #def showlist(self):
-        for item in fodboldtur.item():
-            Label(self.listWindow, text=item)
 
 
-
+infile = open(filename,'rb')
+fodboldtur = pickle.load(infile)
+infile.close()
   #      img = ImageTk.PhotoImage(Image.open("assets/img/cyl.png"))
  #       panel = Label(self.listWindow, image=img)
 #        panel.image = img

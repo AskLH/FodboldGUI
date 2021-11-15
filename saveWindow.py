@@ -2,6 +2,10 @@ from tkinter import *
 from tkinter.ttk import *
 import pickle
 
+filename = 'betalinger.pk'
+fodboldtur ={}
+
+
 class saveWindowCLass:
     def __init__(self, master):
         self.master = master
@@ -19,11 +23,14 @@ class saveWindowCLass:
         NoButton.pack(padx=20, pady=10, side=LEFT)
 
 
-
     def gem(self):
         filename = 'betalinger.pk'
         outfile = open(filename, 'wb')
-       # pickle.dump(fodboldtur, outfile)
+        pickle.dump(fodboldtur, outfile)
         outfile.close()
         print("Dataen er gemt")
         self.master.root.destroy()
+
+infile = open(filename, 'rb')
+fodboldtur = pickle.load(infile)
+infile.close()

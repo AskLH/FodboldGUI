@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.ttk import *
-
-#from listWindow import listWindowCLass
+import pickle
+from listWindow import listWindowClass
 from payWindow import payWindowClass
 from saveWindow import saveWindowCLass
 
@@ -32,7 +32,7 @@ class mainWindowClass:
         #BUTTONS
         self.progress.pack(padx= 20)
 
-        listButton = Button(self.root,text ="Liste over indbetalinger",command = lambda: listWindowCLass(self))
+        listButton = Button(self.root,text ="Liste over indbetalinger",command = lambda: listWindowClass(self))
         listButton.pack(padx = 20, pady = 10,side=LEFT)
 
 

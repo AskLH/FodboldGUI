@@ -23,4 +23,13 @@ class payWindowClass:
         pass
 
     def addMoney(self):
-        pass
+        try:
+            amount = abs(int(self.money.get()))  # HUSK AT VALIDERE INPUT!, kun positive heltal!
+        except:
+            messagebox.showerror(parent=self.payWindow, title="Beløb fejl!", message="Prøv igen.\nKun hele tal!")
+            return
+
+        self.master.total += amount
+        self.master.progressLabelText.set(f"Indsamlet: {self.master.total} af {self.master.target} kroner:")
+        print(f"Indsamlet: {self.master.total} af {self.master.target} kroner!")
+        self.master.progress['value'] = self.master.total / self.master.target * 100

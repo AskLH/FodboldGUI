@@ -8,12 +8,12 @@ from saveWindow import saveWindowCLass
 filename = 'betalinger.pk'
 fodboldtur ={}
 
-samletbeløb = list(fodboldtur.values())
-x = sum(samletbeløb)
-print(samletbeløb)
+
 
 class mainWindowClass:
     def __init__(self):
+        samletbeløb = list(fodboldtur.values())
+        x = sum(samletbeløb)
         self.total = x
         self.target = 4500
         # creating tkinter window
@@ -50,11 +50,13 @@ class mainWindowClass:
 
         # infinite loop
         mainloop()
+infile = open(filename, 'rb')
+fodboldtur = pickle.load(infile)
+infile.close()
+
 
 if __name__ == '__main__':
     main = mainWindowClass()
 
 
-infile = open(filename, 'rb')
-fodboldtur = pickle.load(infile)
-infile.close()
+

@@ -7,7 +7,10 @@ from saveWindow import saveWindowCLass
 
 filename = 'betalinger.pk'
 fodboldtur ={}
-x = sum(fodboldtur.items())
+
+samletbeløb = list(fodboldtur.values())
+x = sum(samletbeløb)
+print(samletbeløb)
 
 class mainWindowClass:
     def __init__(self):

@@ -5,13 +5,12 @@ import pickle
 
 
 filename = 'betalinger.pk'
-fodboldtur ={}
+fodboldtur = {}
+#listen = list(fodboldtur[])
 
 
 class listWindowClass:
-    def showlist(self):
-        for item in fodboldtur.item():
-            Label(self.listWindow, text=item)
+
 
 
     def __init__(self, master):
@@ -21,7 +20,8 @@ class listWindowClass:
         self.listWindow.geometry("500x500")
 
         Label(self.listWindow, text="Liste over indbetalinger.. eller.. noget der ligner en cylinder").pack()
-
+        Label(self.listWindow, text=fodboldtur).pack()
+      #  Label(self.listWindow, text=listen[0]).pack()
 
 infile = open(filename,'rb')
 fodboldtur = pickle.load(infile)

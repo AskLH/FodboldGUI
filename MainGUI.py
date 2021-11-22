@@ -5,10 +5,13 @@ from listWindow import listWindowClass
 from payWindow import payWindowClass
 from saveWindow import saveWindowCLass
 
+filename = 'betalinger.pk'
+fodboldtur ={}
+x = sum(fodboldtur.items())
 
 class mainWindowClass:
     def __init__(self):
-        self.total = 1200
+        self.total = x
         self.target = 4500
         # creating tkinter window
         self.root = Tk()
@@ -47,3 +50,8 @@ class mainWindowClass:
 
 if __name__ == '__main__':
     main = mainWindowClass()
+
+
+infile = open(filename, 'rb')
+fodboldtur = pickle.load(infile)
+infile.close()

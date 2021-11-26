@@ -4,9 +4,6 @@ from tkinter import *
 import pickle
 
 
-filename = 'betalinger.pk'
-fodboldtur = {}
-#listen = list(fodboldtur[])
 
 
 class listWindowClass:
@@ -18,14 +15,14 @@ class listWindowClass:
         self.listWindow = Toplevel(self.master.root)
         self.listWindow.title("List Window")
         self.listWindow.geometry("500x500")
-
         Label(self.listWindow, text="Liste over indbetalinger.. eller.. noget der ligner en cylinder").pack()
-        Label(self.listWindow, text=fodboldtur).pack()
+        self.tekst = ""
+        for key in self.master.fodboldtur.keys():
+            self.tekst += key + " : " + str(self.master.fodboldtur[key]) + "\n"
+        Label(self.listWindow, text=self.tekst).pack()
       #  Label(self.listWindow, text=listen[0]).pack()
 
-infile = open(filename,'rb')
-fodboldtur = pickle.load(infile)
-infile.close()
+
   #      img = ImageTk.PhotoImage(Image.open("assets/img/cyl.png"))
  #       panel = Label(self.listWindow, image=img)
 #        panel.image = img

@@ -5,14 +5,19 @@ from listWindow import listWindowClass
 from payWindow import payWindowClass
 from saveWindow import saveWindowCLass
 
-filename = 'betalinger.pk'
-fodboldtur ={}
+
 
 
 
 class mainWindowClass:
     def __init__(self):
-        samletbeløb = list(fodboldtur.values())
+        filename = 'betalinger.pk'
+        self.fodboldtur = {}
+        infile = open(filename, 'rb')
+        self.fodboldtur = pickle.load(infile)
+        infile.close()
+        #self.listen = list(self.fodboldtur)
+        samletbeløb = list(self.fodboldtur.values())
         x = sum(samletbeløb)
         self.total = x
         self.target = 4500
@@ -50,9 +55,7 @@ class mainWindowClass:
 
         # infinite loop
         mainloop()
-infile = open(filename, 'rb')
-fodboldtur = pickle.load(infile)
-infile.close()
+
 
 
 if __name__ == '__main__':

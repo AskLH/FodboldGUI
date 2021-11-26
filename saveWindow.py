@@ -2,9 +2,6 @@ from tkinter import *
 from tkinter.ttk import *
 import pickle
 
-filename = 'betalinger.pk'
-fodboldtur ={}
-
 
 class saveWindowCLass:
     def __init__(self, master):
@@ -31,6 +28,3 @@ class saveWindowCLass:
         print("Dataen er gemt")
         self.master.root.destroy()
 
-infile = open(filename, 'rb')
-fodboldtur = pickle.load(infile)
-infile.close()

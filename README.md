@@ -3,11 +3,13 @@ Trello link: https://trello.com/b/0FGdQUMK/gui-gooey
 
 Hello my friend [Ny flowchart](http://youtube.com/watch?v=dQw4w9WgXcQ)
 
-Her er en skitse/tegning af en GUI ide.
+Her er en skitse/tegning af en GUI ide. 
 ![Alt Text](GUI1.jpg)
 
 Her er en anden skitse/tegning af en GUI ide.
 ![Alt Text](GUI2.jpg)
+
+Vores færdige program i forhold til vores skitser passer ikke helt med hinanden. Vi har bevidst valgt at ikke opdatere vores skitseringer, da vi synes det dræber pointen ved at lave skitser.
 
 Her er vores UML analyse af Marks kodning.
 ![Alt Text](UML.png)

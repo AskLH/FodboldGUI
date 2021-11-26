@@ -1,3 +1,4 @@
+Vores Trello board er gået ret så smooth. Som set, det eneste vi ikke har nået er Easter egg klassen, den var der også primært hvis vi blev færdigt tidligt.
 Trello link: https://trello.com/b/0FGdQUMK/gui-gooey 
 
 Hello my friend [Ny flowchart](http://youtube.com/watch?v=dQw4w9WgXcQ)

@@ -23,7 +23,6 @@ class payWindowClass:
         self.button.pack()
 
         self.names = list(self.master.fodboldtur.keys())
-        print(self.names[0])
 
         self.option_var = tk.StringVar(self.payWindow)
         self.option_var.set("Vælg et navn")

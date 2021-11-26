@@ -1,3 +1,4 @@
+Vores Trello board er gået ret så smooth. Som set, det eneste vi ikke har nået er Easter egg klassen, den var der også primært hvis vi blev færdigt tidligt.
 Trello link: https://trello.com/b/0FGdQUMK/gui-gooey 
 
 Hello my friend [Ny flowchart](http://youtube.com/watch?v=dQw4w9WgXcQ)
@@ -12,7 +13,7 @@ Her er vores UML analyse af Marks kodning.
 ![Alt Text](UML.png)
 
 Dette er et UML diagram der repræsentere hvordan vores GUI kommer til at se ud. Det er en vidre udvikling fra Marks kode af fodboldGUI.
-![Alt Text](UML2.png)
+![Alt Text](uml3.png)
 
 Her er et flowchart over hvordan vi tænker vores GUI skal være.
 ![Alt Text](Flowchart1.png)

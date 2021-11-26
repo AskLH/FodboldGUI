@@ -14,7 +14,7 @@ Vores færdige program i forhold til vores skitser passer ikke helt med hinanden
 Her er vores UML analyse af Marks kodning.
 ![Alt Text](UML.png)
 
-Dette er et UML diagram der repræsentere hvordan vores GUI kommer til at se ud. Det er en vidre udvikling fra Marks kode af fodboldGUI.
+UML diagrammet repræsentere endelige GUI. Det er en vidre udvikling fra Marks kode af fodboldGUI.
 ![Alt Text](uml3.png)
 
 Her er et flowchart over hvordan vi tænker vores GUI skal være.

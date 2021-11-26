@@ -23,7 +23,7 @@ class saveWindowCLass:
     def gem(self):
         filename = 'betalinger.pk'
         outfile = open(filename, 'wb')
-        pickle.dump(fodboldtur, outfile)
+        pickle.dump(self.master.fodboldtur, outfile)
         outfile.close()
         print("Dataen er gemt")
         self.master.root.destroy()
